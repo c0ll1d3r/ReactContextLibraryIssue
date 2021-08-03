@@ -3,8 +3,7 @@ const path = require('path')
 module.exports = {
     mode: 'development',
     entry: {
-        'shared': 'react',
-        'contexts': { import: './src/contexts/index.js', dependOn: 'shared' },
+        'contexts': './src/contexts/index.js',
         'hooks': './src/hooks/index.js',
         'components': './src/components/index.js'
     },
@@ -41,8 +40,5 @@ module.exports = {
             umd: 'react',
             root: 'React'
         }
-    },
-    optimization: {
-        runtimeChunk: "single",
     }
 }
