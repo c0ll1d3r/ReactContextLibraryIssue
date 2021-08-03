@@ -1,0 +1,21 @@
+{
+  "name": "mylib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    "components": "./dist/components.js",
+    "contexts": "./dist/contexts.js",
+    "hooks": "./dist/hooks.js"
+  },
+  "scripts": {
+    "build": "webpack && yalc publish && yalc push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "17.0.2"
+  },
+  "yalcSig": "9273b3e6ad6019500de07c479cd91b33"
+}
